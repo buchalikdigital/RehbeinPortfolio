@@ -32,10 +32,10 @@ function Stat({
 }
 
 const reasons = [
-  "Meistergeführter Familienbetrieb in vierter Generation",
+  "Meistergeführter Familienbetrieb in dritter Generation",
   "Fünf Gewerke aus einer Hand — ein Ansprechpartner",
   "Termintreu, sauber und mit ehrlicher Beratung",
-  "Über 100 Jahre Erfahrung in und um Dortmund",
+  "Über 90 Jahre Erfahrung in und um Bochum",
 ];
 
 export default function WhyUs() {
@@ -48,13 +48,13 @@ export default function WhyUs() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-[0_20px_50px_-24px_rgba(0,0,0,0.4)]">
                 <img
-                  src="/images/founder/heinrich-freitag-pointing-signature.jpg"
-                  alt="Heinrich Freitag, Inhaber"
+                  src="/images/founder/rehbein-inhaber.jpg"
+                  alt="Manfred Rehbein, Inhaber"
                   loading="lazy"
-                  className="aspect-[542/225] w-full object-cover"
+                  className="aspect-[4/3] w-full object-cover"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-navy/85 px-4 py-2.5">
-                  <p className="font-serif text-sm font-bold text-white">Heinrich Freitag</p>
+                  <p className="font-serif text-sm font-bold text-white">Manfred Rehbein</p>
                   <p className="text-xs text-cream">Inhaber &amp; Meister</p>
                 </div>
               </div>
@@ -66,32 +66,20 @@ export default function WhyUs() {
                 </span>
               </div>
             </div>
-
-            <div className="mt-4 overflow-hidden rounded-2xl bg-white shadow-[0_14px_36px_-20px_rgba(0,0,0,0.35)]">
-              <img
-                src="/images/history/team-2007.jpg"
-                alt="Feier zum 100-jährigen Firmenjubiläum von Heinrich Freitag, 2007"
-                loading="lazy"
-                className="aspect-[212/118] w-full object-cover"
-              />
-              <p className="px-4 py-2.5 text-xs font-medium text-ink-light">
-                100-Jahre-Jubiläum · 2007
-              </p>
-            </div>
           </div>
         </Reveal>
 
         {/* Content */}
         <div>
-          <p className="eyebrow">Warum Freitag</p>
+          <p className="eyebrow">Warum Rehbein</p>
           <h2 className="display mt-3 text-[clamp(1.5rem,3.2vw,2.3rem)] !text-white">
             Handwerk mit <em>Handschlag-Qualität</em>
           </h2>
           <div className="orange-line" />
           <p className="mt-4 text-base leading-relaxed text-cream/80">
-            Seit {company.foundedYear} steht der Name Freitag in {company.city} für
+            Seit {company.foundedYear} steht der Name Rehbein in {company.city} für
             ehrliches Handwerk. Was als kleiner Betrieb begann, führen wir heute
-            in vierter Generation mit demselben Anspruch: Ihre Zufriedenheit ist
+            in dritter Generation mit demselben Anspruch: Ihre Zufriedenheit ist
             unser Maßstab.
           </p>
 

@@ -6,7 +6,7 @@ import { company, yearsInBusiness } from "@/lib/content";
 
 const stats = [
   { value: `${yearsInBusiness()}`, label: "Jahre Erfahrung" },
-  { value: "4", label: "Generationen" },
+  { value: "3", label: "Generationen" },
   { value: "24/7", label: "Notdienst" },
 ];
 
@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#0e2a5e_0%,#0e2a5e_78%,#eaf2fe_92%,#ffffff_100%)] pb-14 pt-20 sm:pt-24"
+      className="relative overflow-hidden bg-[linear-gradient(180deg,#0e2a5e_0%,#0e2a5e_78%,#eaf2fe_92%,#ffffff_100%)] pb-14 pt-[105px] sm:pt-[121px]"
     >
       <motion.div
         variants={container}
@@ -35,14 +35,6 @@ export default function Hero() {
         animate="visible"
         className="container-x relative flex flex-col items-center text-center"
       >
-        <motion.div
-          variants={item}
-          className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5"
-        >
-          <span className="h-1.5 w-1.5 rounded-full bg-orange" />
-          <span className="text-xs font-semibold text-white/90">24/7 Notdienst verfügbar</span>
-        </motion.div>
-
         <motion.h1
           variants={item}
           className="display max-w-2xl text-[clamp(1.9rem,4vw,2.9rem)] !text-white"
@@ -95,9 +87,9 @@ export default function Hero() {
       >
         <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border-4 border-white/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)]">
           <img
-            src="/images/founder/heinrich-freitag-bathroom-sign.jpg"
-            alt="Heinrich Freitag im Einsatz"
-            className="aspect-[542/225] w-full object-cover"
+            src="/images/founder/rehbein-hero.jpg"
+            alt="Sanitärinstallateur bei der Arbeit"
+            className="aspect-[16/9] w-full object-cover"
           />
         </div>
       </motion.div>

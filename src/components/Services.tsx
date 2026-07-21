@@ -3,20 +3,14 @@
 import { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { services, type Service } from "@/lib/content";
 
-// Echte Seitenverhältnisse der Originalfotos (alte Web-Banner, unterschiedlich groß) —
-// Container werden daran ausgerichtet statt die Bilder zu verzerren/hochzuskalieren.
-const imageAspect: Record<string, string> = {
-  bad: "542 / 128",
-  heizung: "542 / 128",
-  sanitaer: "542 / 225",
-  solar: "542 / 225",
-  gas: "262 / 75",
-};
+// Einheitliches Seitenverhältnis für alle Karten, damit das Grid ruhig
+// und vergleichbar wirkt (die Originalfotos hatten stark unterschiedliche Formate).
+const IMAGE_ASPECT = "21 / 9";
 
 function ServiceIcon({ icon, color }: { icon: Service["icon"]; color: string }) {
   const common = {
-    width: 26,
-    height: 26,
+    width: 30,
+    height: 30,
     viewBox: "0 0 24 24",
     fill: "none",
     stroke: color,
@@ -69,14 +63,14 @@ function ServiceCard({ service }: { service: Service }) {
   return (
     <RevealItem>
       <div className="flex h-full flex-col overflow-hidden border border-navy/8 bg-white shadow-[0_8px_28px_-20px_rgba(14,42,94,0.35)]">
-        <div className="relative overflow-hidden" style={{ aspectRatio: imageAspect[service.key] }}>
+        <div className="relative overflow-hidden" style={{ aspectRatio: IMAGE_ASPECT }}>
           <img
             src={service.image}
             alt={service.title}
             loading="lazy"
             className="h-full w-full object-cover"
           />
-          <div className="absolute left-3 top-3 grid h-10 w-10 place-items-center bg-white shadow-md">
+          <div className="absolute left-4 top-4 grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-[0_10px_28px_-16px_rgba(0,0,0,0.3)]">
             <ServiceIcon icon={service.icon} color={service.accent} />
           </div>
         </div>
@@ -117,7 +111,7 @@ export default function Services() {
           <div className="orange-line" />
           <p className="mt-4 text-base text-ink-mid">
             Ob neues Traumbad, moderne Heizung oder eigene Solarenergie: Bei
-            Freitag bekommen Sie fünf Gewerke von einem einzigen Meisterbetrieb.
+            Rehbein bekommen Sie fünf Gewerke von einem einzigen Meisterbetrieb.
           </p>
         </div>
 

@@ -17,36 +17,38 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE = "https://www.freitag-dortmund.de";
+// Fiktives Demo-/Portfolio-Projekt — keine echte Domain, kein echtes Unternehmen.
+const SITE = "https://www.rehbein-bochum.de";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: {
-    default: "Heinrich Freitag GmbH — Bad, Heizung & Solar in Dortmund seit 1907",
-    template: "%s | Heinrich Freitag GmbH",
+    default: "Rehbein Sanitär & Heizung GmbH — Bad, Heizung & Solar in Bochum seit 1934",
+    template: "%s | Rehbein Sanitär & Heizung GmbH",
   },
   description:
-    "Meisterbetrieb für Komplettbadsanierung, Heizungs-, Sanitär- und Solartechnik in Dortmund. Familientradition seit 1907. Jetzt kostenloses Angebot anfordern.",
+    "Meisterbetrieb für Komplettbadsanierung, Heizungs-, Sanitär- und Solartechnik in Bochum. Familientradition seit 1934. Jetzt kostenloses Angebot anfordern.",
   keywords: [
-    "Sanitär Dortmund",
-    "Heizung Dortmund",
-    "Badsanierung Dortmund",
-    "Solartechnik Dortmund",
-    "Klempner Dortmund",
-    "Heinrich Freitag",
+    "Sanitär Bochum",
+    "Heizung Bochum",
+    "Badsanierung Bochum",
+    "Solartechnik Bochum",
+    "Klempner Bochum",
+    "Rehbein Sanitär",
   ],
-  authors: [{ name: "Heinrich Freitag GmbH" }],
+  authors: [{ name: "Rehbein Sanitär & Heizung GmbH" }],
   alternates: { canonical: SITE },
   openGraph: {
     type: "website",
     locale: "de_DE",
     url: SITE,
-    siteName: "Heinrich Freitag GmbH",
-    title: "Bad, Heizung & Solar in Dortmund — seit 1907",
+    siteName: "Rehbein Sanitär & Heizung GmbH",
+    title: "Bad, Heizung & Solar in Bochum — seit 1934",
     description:
-      "Meisterbetrieb für Komplettbadsanierung, Heizungs-, Sanitär- und Solartechnik in Dortmund. Familientradition seit 1907.",
+      "Meisterbetrieb für Komplettbadsanierung, Heizungs-, Sanitär- und Solartechnik in Bochum. Familientradition seit 1934.",
   },
-  robots: { index: true, follow: true },
+  // Fiktives Demo-Projekt — bewusst von der Indexierung ausgeschlossen.
+  robots: { index: false, follow: false },
 };
 
 export const viewport: Viewport = {

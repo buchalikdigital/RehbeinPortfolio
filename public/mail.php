@@ -9,11 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// ── NACH DIENSTAG: Diese Zeile ändern auf 'info@freitag-dortmund.de' ──
+// Fiktives Demo-Projekt: Formular-Anfragen laufen bewusst hier auf, nicht bei einem echten Unternehmen.
 $to = 'buchalikwebsites@gmail.com';
-// ─────────────────────────────────────────────────────────────────────
 
-$subject_prefix = 'Neue Anfrage über freitag-dortmund.de';
+$subject_prefix = 'Neue Anfrage über rehbein-bochum.de (Demo)';
 
 // JSON-Input lesen
 $input = json_decode(file_get_contents('php://input'), true);
@@ -50,7 +49,7 @@ $mail_subject = $subject_prefix . ($subject ? ': ' . $subject : '');
 
 $headers  = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-$headers .= "From: Freitag Website <noreply@freitag-dortmund.de>\r\n";
+$headers .= "From: Rehbein Website <noreply@rehbein-bochum.de>\r\n";
 $headers .= "Reply-To: {$name} <{$email}>\r\n";
 
 $body = "
@@ -73,7 +72,7 @@ $body = "
 <div class='wrap'>
   <div class='header'>
     <h1>Neue Kundenanfrage</h1>
-    <p>Über das Kontaktformular auf freitag-dortmund.de</p>
+    <p>Über das Kontaktformular auf rehbein-bochum.de</p>
   </div>
   <div class='body'>
     <div class='field'>
@@ -99,7 +98,7 @@ $body = "
       <div class='value message-box'>" . nl2br($message) . "</div>
     </div>
   </div>
-  <div class='footer'>Heinrich Freitag GmbH &bull; Am Geenseel 12, 44263 Dortmund</div>
+  <div class='footer'>Rehbein Sanitär & Heizung GmbH &bull; Alleestraße 27, 44793 Bochum</div>
 </div>
 </body></html>
 ";
@@ -110,7 +109,7 @@ if ($sent) {
     // Auto-Antwort an den Absender
     $reply_headers  = "MIME-Version: 1.0\r\n";
     $reply_headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    $reply_headers .= "From: Heinrich Freitag GmbH <info@freitag-dortmund.de>\r\n";
+    $reply_headers .= "From: Rehbein Sanitär & Heizung GmbH <info@rehbein-bochum.de>\r\n";
 
     $reply_body = "
     <!DOCTYPE html>
@@ -128,14 +127,14 @@ if ($sent) {
       <div class='body'>
         <p>Ihre Anfrage ist bei uns angekommen.</p>
         <p>Wir melden uns innerhalb von <strong>24 Stunden</strong> bei Ihnen.</p>
-        <p>Mit freundlichen Grüßen,<br><strong>Heinrich Freitag GmbH</strong><br>0231 - 94 11 310</p>
+        <p>Mit freundlichen Grüßen,<br><strong>Rehbein Sanitär & Heizung GmbH</strong><br>0234 68 12 550</p>
       </div>
-      <div class='footer'>freitag-dortmund.de &bull; Am Geenseel 12, 44263 Dortmund</div>
+      <div class='footer'>rehbein-bochum.de &bull; Alleestraße 27, 44793 Bochum</div>
     </div>
     </body></html>
     ";
 
-    mail($email, 'Ihre Anfrage bei Heinrich Freitag GmbH', $reply_body, $reply_headers);
+    mail($email, 'Ihre Anfrage bei Rehbein Sanitär & Heizung GmbH', $reply_body, $reply_headers);
 
     echo json_encode(['success' => true]);
 } else {

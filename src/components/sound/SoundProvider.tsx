@@ -19,7 +19,7 @@ type SoundContextValue = {
 };
 
 const SoundContext = createContext<SoundContextValue | null>(null);
-const STORAGE_KEY = "freitag-sound";
+const STORAGE_KEY = "rehbein-sound";
 
 export function SoundProvider({ children }: { children: React.ReactNode }) {
   const [enabled, setEnabled] = useState(false);

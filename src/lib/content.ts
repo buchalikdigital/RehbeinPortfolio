@@ -1,18 +1,18 @@
-// Zentrale, echte Inhalte der Heinrich Freitag GmbH.
-// Quelle: freitag-dortmund.de + dokumentierte Marken-/Kontaktdaten.
+// Fiktives Demo-Unternehmen (Portfolio-Projekt) — Rehbein Sanitär & Heizung GmbH.
+// Kein echtes Unternehmen; Struktur/Design basiert auf einem früheren Kundenprojekt,
+// alle Firmen-/Personen-/Kontaktdaten sind frei erfunden.
 
 export const company = {
-  name: "Heinrich Freitag GmbH",
-  short: "Freitag",
-  foundedYear: 1907,
-  city: "Dortmund",
-  street: "Am Geenseel 12",
-  zip: "44263",
-  // Bestätigt über die Auto-Antwort in public/mail.php ("0231 - 94 11 310").
-  phoneDisplay: "0231 94 11 310",
-  phoneHref: "+492319411310",
-  faxDisplay: "0231 94 11 31-9",
-  email: "info@freitag-dortmund.de",
+  name: "Rehbein Sanitär & Heizung GmbH",
+  short: "Rehbein",
+  foundedYear: 1934,
+  city: "Bochum",
+  street: "Alleestraße 27",
+  zip: "44793",
+  phoneDisplay: "0234 68 12 550",
+  phoneHref: "+492346812550",
+  faxDisplay: "0234 68 12 55-9",
+  email: "info@rehbein-bochum.de",
   hours: [
     { day: "Mo – Do", time: "8:00 – 12:30 & 14:00 – 16:00 Uhr" },
     { day: "Freitag", time: "8:00 – 13:00 Uhr" },
@@ -27,7 +27,6 @@ export function yearsInBusiness() {
 export const navLinks = [
   { label: "Leistungen", href: "#leistungen" },
   { label: "Warum wir", href: "#warum" },
-  { label: "Ablauf", href: "#ablauf" },
   { label: "Partner", href: "#partner" },
   { label: "Kontakt", href: "#kontakt" },
 ];
@@ -97,68 +96,43 @@ export const services: Service[] = [
 
 export const stats = [
   { value: yearsInBusiness(), suffix: "", label: "Jahre Erfahrung", accent: "#1b6fd0" },
-  { value: 4, suffix: "", label: "Generationen Familienbetrieb", accent: "#f1650f" },
+  { value: 3, suffix: "", label: "Generationen Familienbetrieb", accent: "#f1650f" },
   { value: 3, suffix: "", label: "Sparten unter einem Dach", accent: "#ffa200" },
   { value: 100, suffix: "%", label: "Meisterbetrieb", accent: "#0e2a5e" },
 ];
 
-export const processSteps = [
-  {
-    n: "01",
-    title: "Anfrage & Kennenlernen",
-    text: "Sie schildern uns Ihr Vorhaben – telefonisch oder über das Formular. Wir melden uns schnell zurück.",
-  },
-  {
-    n: "02",
-    title: "Beratung vor Ort",
-    text: "Ein Meister kommt zu Ihnen, nimmt auf und berät Sie ehrlich zu Technik, Ablauf und Kosten.",
-  },
-  {
-    n: "03",
-    title: "Festes Angebot",
-    text: "Sie erhalten ein transparentes, verbindliches Angebot – ohne versteckte Posten.",
-  },
-  {
-    n: "04",
-    title: "Umsetzung & Service",
-    text: "Wir setzen sauber und termintreu um – und sind auch nach der Abnahme für Sie da.",
-  },
-];
-
-// PLATZHALTER — vor Livegang durch echte Kundenbewertungen ersetzen.
+// Fiktive Beispiel-Bewertungen (Demo-Projekt, keine echten Kunden).
 export const testimonials = [
   {
     quote:
-      "Vom ersten Termin bis zur Abnahme alles perfekt organisiert. Unser neues Bad ist ein Traum – pünktlich und sauber gearbeitet.",
+      "Vom ersten Anruf bis zur Abnahme alles bestens organisiert. Unser neues Bad ist ein Traum – pünktlich und sauber gearbeitet.",
     name: "Familie K.",
-    place: "Dortmund-Hörde",
+    place: "Bochum",
     service: "Komplettbadsanierung",
   },
   {
     quote:
-      "Die neue Heizung läuft top und unsere Kosten sind spürbar gesunken. Kompetente Beratung, faire Preise, echter Meisterbetrieb.",
-    name: "M. Schneider",
-    place: "Dortmund",
+      "Die neue Heizung läuft top und die Kosten sind spürbar gesunken. Kompetente Beratung, faire Preise.",
+    name: "T. Herrmann",
+    place: "Bochum",
     service: "Heizungstechnik",
   },
   {
-    quote:
-      "Seit Jahren unser verlässlicher Partner für Sanitär und Wartung. Man merkt die Erfahrung von über 100 Jahren.",
-    name: "H. Wagner",
-    place: "Dortmund-Aplerbeck",
-    service: "Sanitärtechnik",
+    quote: "Zuverlässig, freundlich und immer erreichbar. Kann ich uneingeschränkt weiterempfehlen.",
+    name: "S. Nowak",
+    place: "Bochum",
+    service: "Sanitär- & Heizungstechnik",
   },
 ];
 
+// Fiktive Marken-Partner (kein reales Unternehmen, Demo-Projekt).
 export const partners = [
-  { name: "Geberit", src: "/logos/geberit.svg" },
-  { name: "Duravit", src: "/logos/duravit.svg" },
-  { name: "Hansgrohe", src: "/logos/hansgrohe.svg" },
-  { name: "Dornbracht", src: "/logos/dornbracht.svg" },
-  { name: "Ideal Standard", src: "/logos/ideal-standard.svg" },
-  { name: "Keuco", src: "/logos/keuco.jpg" },
-  { name: "Viega", src: "/logos/viega.svg" },
-  { name: "Keramag", src: "/logos/keramag.png" },
-  { name: "HSK", src: "/logos/hsk.svg" },
-  { name: "Pressalit", src: "/logos/pressalit-new.svg" },
+  { name: "Aquora", src: "/logos/aquora.svg" },
+  { name: "Klarwell", src: "/logos/klarwell.svg" },
+  { name: "Purolux", src: "/logos/purolux.svg" },
+  { name: "Badero", src: "/logos/badero.svg" },
+  { name: "Wärmtec", src: "/logos/waermtec.svg" },
+  { name: "Solvexa", src: "/logos/solvexa.svg" },
+  { name: "Nordarmatur", src: "/logos/nordarmatur.svg" },
+  { name: "Vitalbad", src: "/logos/vitalbad.svg" },
 ];

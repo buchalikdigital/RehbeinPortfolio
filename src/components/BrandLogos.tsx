@@ -19,7 +19,8 @@ export default function BrandLogos() {
               key={`${p.name}-${i}`}
               src={p.src}
               alt={p.name}
-              loading="lazy"
+              loading="eager"
+              decoding="async"
               className="h-6 w-auto shrink-0 opacity-90 transition-opacity duration-300 hover:opacity-100 md:h-7"
             />
           ))}

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
-const SESSION_KEY = "freitag-preloaded";
+const SESSION_KEY = "rehbein-preloaded";
 
 export default function Preloader() {
   const reduce = useReducedMotion();
@@ -86,7 +86,7 @@ export default function Preloader() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              Freitag
+              Rehbein
             </motion.span>
             <motion.span
               className="text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-cream"
@@ -94,7 +94,7 @@ export default function Preloader() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.6 }}
             >
-              Seit 1907
+              Seit 1934
             </motion.span>
           </div>
         </motion.div>

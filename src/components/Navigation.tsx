@@ -103,14 +103,14 @@ export default function Navigation() {
         transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         className="fixed left-4 top-3 z-50 grid place-items-center rounded-2xl bg-white px-3 py-2 shadow-[0_10px_28px_-12px_rgba(14,42,94,0.45)] sm:left-6 sm:top-4"
       >
-        <Logo variant="full" size={22} />
+        <Logo variant="full" size={17} />
       </motion.a>
 
       <motion.div
         initial={reduce ? false : { y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed inset-x-0 top-3 z-50 flex justify-center px-4 sm:top-4"
+        className="fixed inset-x-0 top-3 z-50 flex justify-end px-4 sm:top-4 lg:justify-center"
       >
         <nav className="flex max-w-full items-center gap-1 rounded-full bg-[linear-gradient(180deg,#1b3e7c_0%,#0e2a5e_55%,#071b40_100%)] py-1.5 pl-2 pr-2 shadow-[0_16px_40px_-14px_rgba(7,27,64,0.55)] sm:gap-2 sm:pl-3 sm:pr-3">
           <div className="hidden lg:block">

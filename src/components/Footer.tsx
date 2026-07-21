@@ -11,8 +11,8 @@ export default function Footer() {
         <div>
           <Logo theme="dark" size={28} />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/70">
-            Ihr Meisterbetrieb für Bad, Heizung, Sanitär und Solar in Dortmund —
-            in vierter Generation, seit 1907.
+            Ihr Meisterbetrieb für Bad, Heizung, Sanitär und Solar in {company.city} —
+            in dritter Generation, seit {company.foundedYear}.
           </p>
           <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1.5 text-xs font-semibold text-gold">
             <span className="h-2 w-2 rounded-full bg-gold" />
