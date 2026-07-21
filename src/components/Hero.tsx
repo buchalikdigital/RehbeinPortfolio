@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import MagneticButton from "@/components/ui/MagneticButton";
 import { company, yearsInBusiness } from "@/lib/content";
+import { basePath } from "@/lib/basePath";
 
 const stats = [
   { value: `${yearsInBusiness()}`, label: "Jahre Erfahrung" },
@@ -87,7 +88,7 @@ export default function Hero() {
       >
         <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border-4 border-white/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)]">
           <img
-            src="/images/founder/rehbein-hero.jpg"
+            src={`${basePath}/images/founder/rehbein-hero.jpg`}
             alt="Sanitärinstallateur bei der Arbeit"
             className="aspect-[16/9] w-full object-cover"
           />

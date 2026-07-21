@@ -1,6 +1,7 @@
 "use client";
 
 import Reveal from "@/components/ui/Reveal";
+import { basePath } from "@/lib/basePath";
 
 const points = [
   "Zertifizierter Vitalbad-Fachpartner",
@@ -16,7 +17,7 @@ export default function GeberitPartner() {
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div>
               <div className="mb-5 inline-flex items-center gap-3 rounded-full bg-white px-4 py-2 shadow-sm">
-                <img src="/logos/vitalbad.svg" alt="Vitalbad" className="h-4 w-auto" />
+                <img src={`${basePath}/logos/vitalbad.svg`} alt="Vitalbad" className="h-4 w-auto" />
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-ink">
                   Premium-Partner
                 </span>
@@ -54,7 +55,7 @@ export default function GeberitPartner() {
             <Reveal direction="left" delay={0.1}>
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="/images/partners/geberit-aquaclean-ad.jpg"
+                  src={`${basePath}/images/partners/geberit-aquaclean-ad.jpg`}
                   alt="Vitalbad AquaSense Dusch-WC"
                   loading="lazy"
                   className="w-full object-cover"

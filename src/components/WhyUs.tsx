@@ -3,6 +3,7 @@
 import Reveal, { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { useCountUp } from "@/hooks/useCountUp";
 import { stats, company } from "@/lib/content";
+import { basePath } from "@/lib/basePath";
 
 function Stat({
   value,
@@ -48,7 +49,7 @@ export default function WhyUs() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-[0_20px_50px_-24px_rgba(0,0,0,0.4)]">
                 <img
-                  src="/images/founder/rehbein-inhaber.jpg"
+                  src={`${basePath}/images/founder/rehbein-inhaber.jpg`}
                   alt="Manfred Rehbein, Inhaber"
                   loading="lazy"
                   className="aspect-[4/3] w-full object-cover"

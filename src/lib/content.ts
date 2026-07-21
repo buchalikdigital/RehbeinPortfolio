@@ -2,6 +2,8 @@
 // Kein echtes Unternehmen; Struktur/Design basiert auf einem früheren Kundenprojekt,
 // alle Firmen-/Personen-/Kontaktdaten sind frei erfunden.
 
+import { basePath } from "./basePath";
+
 export const company = {
   name: "Rehbein Sanitär & Heizung GmbH",
   short: "Rehbein",
@@ -48,7 +50,7 @@ export const services: Service[] = [
     tagline: "Ihr Traumbad aus einer Hand",
     description:
       "Von der Planung über Fliesen und Sanitärobjekte bis zur barrierefreien Dusche – wir sanieren Ihr Bad komplett, termintreu und aus einer Hand.",
-    image: "/images/leistungen/bad.jpg",
+    image: `${basePath}/images/leistungen/bad.jpg`,
     accent: "#1b6fd0",
     icon: "bath",
   },
@@ -58,7 +60,7 @@ export const services: Service[] = [
     tagline: "Effizient & zukunftssicher",
     description:
       "Moderne Brennwert- und Wärmepumpentechnik, Heizungswartung und -modernisierung – für spürbar niedrigere Kosten und mehr Behaglichkeit.",
-    image: "/images/leistungen/heizung.jpg",
+    image: `${basePath}/images/leistungen/heizung.jpg`,
     accent: "#f1650f",
     icon: "heat",
   },
@@ -68,7 +70,7 @@ export const services: Service[] = [
     tagline: "Wasser in besten Händen",
     description:
       "Installation, Wartung und Reparatur Ihrer gesamten Sanitärtechnik – von der tropfenden Leitung bis zur kompletten Neuinstallation.",
-    image: "/images/leistungen/sanitaer.jpg",
+    image: `${basePath}/images/leistungen/sanitaer.jpg`,
     accent: "#0e2a5e",
     icon: "pipe",
   },
@@ -78,7 +80,7 @@ export const services: Service[] = [
     tagline: "Die Kraft der Sonne nutzen",
     description:
       "Solarthermie und regenerative Energietechnik – wir machen Ihr Zuhause unabhängiger und senken dauerhaft Ihren Energieverbrauch.",
-    image: "/images/leistungen/solar.jpg",
+    image: `${basePath}/images/leistungen/solar.jpg`,
     accent: "#ffa200",
     icon: "solar",
   },
@@ -88,7 +90,7 @@ export const services: Service[] = [
     tagline: "Sicher & geprüft",
     description:
       "Fachgerechte Gasinstallation, Prüfung und Wartung nach aktuellen Sicherheits­standards – zuverlässig durch geprüfte Meister.",
-    image: "/images/leistungen/gas.jpg",
+    image: `${basePath}/images/leistungen/gas.jpg`,
     accent: "#f5822e",
     icon: "gas",
   },
@@ -127,12 +129,12 @@ export const testimonials = [
 
 // Fiktive Marken-Partner (kein reales Unternehmen, Demo-Projekt).
 export const partners = [
-  { name: "Aquora", src: "/logos/aquora.svg" },
-  { name: "Klarwell", src: "/logos/klarwell.svg" },
-  { name: "Purolux", src: "/logos/purolux.svg" },
-  { name: "Badero", src: "/logos/badero.svg" },
-  { name: "Wärmtec", src: "/logos/waermtec.svg" },
-  { name: "Solvexa", src: "/logos/solvexa.svg" },
-  { name: "Nordarmatur", src: "/logos/nordarmatur.svg" },
-  { name: "Vitalbad", src: "/logos/vitalbad.svg" },
+  { name: "Aquora", src: `${basePath}/logos/aquora.svg` },
+  { name: "Klarwell", src: `${basePath}/logos/klarwell.svg` },
+  { name: "Purolux", src: `${basePath}/logos/purolux.svg` },
+  { name: "Badero", src: `${basePath}/logos/badero.svg` },
+  { name: "Wärmtec", src: `${basePath}/logos/waermtec.svg` },
+  { name: "Solvexa", src: `${basePath}/logos/solvexa.svg` },
+  { name: "Nordarmatur", src: `${basePath}/logos/nordarmatur.svg` },
+  { name: "Vitalbad", src: `${basePath}/logos/vitalbad.svg` },
 ];
